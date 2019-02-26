@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains json_placeholder.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function json_placeholder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the json_placeholder module.
+    case 'help.page.json_placeholder':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('JSON Placeholder example') . '</p>';
+      return $output;
+
+    default:
+  }
+}

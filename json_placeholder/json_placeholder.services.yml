@@ -1,0 +1,4 @@
+services:
+  json_placeholder.json_placeholder_service:
+    class: Drupal\json_placeholder\JsonPlaceholderService
+    arguments: ['@http_client']

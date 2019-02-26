@@ -1,0 +1,7 @@
+name: 'JSON Placeholder'
+type: module
+description: 'JSON Placeholder example'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - jcarousel:jcarousel

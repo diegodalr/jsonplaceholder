@@ -1,0 +1,25 @@
+ajax_example.json_placeholder_pages_controller_getLinks:
+  path: '/json-placeholder/links'
+  defaults:
+    _controller: '\Drupal\json_placeholder\Controller\JsonPlaceholderPagesController::getLinks'
+    _title: 'Links'
+  requirements:
+    _permission: 'access content'
+
+json_placeholder.json_placeholder_pages_controller_getPosts:
+  path: '/json-placeholder/posts/{nojs}'
+  defaults:
+    _controller: '\Drupal\json_placeholder\Controller\JsonPlaceholderPagesController::getPosts'
+    _title: 'Posts'
+    nojs: 'nojs'
+  requirements:
+    _permission: 'access content'
+
+json_placeholder.json_placeholder_pages_controller_getPhotos:
+  path: '/json-placeholder/photos/{nojs}'
+  defaults:
+    _controller: '\Drupal\json_placeholder\Controller\JsonPlaceholderPagesController::getPhotos'
+    _title: 'Photos'
+    nojs: 'nojs'
+  requirements:
+    _permission: 'access content'
